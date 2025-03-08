@@ -49,14 +49,14 @@ export const HeroSection = () => {
             <ScrollAnimationWrapper>
                 <div className="inline-block max-w-xl text-center justify-center px-4">
                     <span className="tracking-tight inline font-semibold text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-tight">
-                        Hi, I'm
+                        Hi, I&apos;m
                     </span>
                     <span className="tracking-tight inline font-semibold text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-tight bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]">
                         Rafi Chandra.
                     </span>
 
                     <div className="w-full my-2 text-base sm:text-lg lg:text-xl text-default-600 block max-w-full">
-                        I'm a software engineer with a passion for building accessible and
+                        I&apos;m a software engineer with a passion for building accessible and
                         customizable web applications.
                     </div>
                 </div>

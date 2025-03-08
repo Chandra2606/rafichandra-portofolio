@@ -18,3 +18,8 @@ build
 !plopfile.js
 !react-shim.js
 !tsup.config.ts
+*.js
+*.jsx
+*.ts
+*.tsx
+!.eslintrc.js
