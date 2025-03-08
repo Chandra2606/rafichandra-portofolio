@@ -1,17 +1,23 @@
-import React from 'react';
+import React from "react";
 import { Card, CardFooter } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
 import { Download } from "lucide-react";
+
+import ScrollAnimationWrapper from "../ScrollAnimationWrapper";
+
 import foto from "@/public/image/me.jpg";
-import ScrollAnimationWrapper from '../ScrollAnimationWrapper';
 
 export const HeroSection = () => {
     return (
         <section className="relative min-h-screen flex flex-col items-center justify-center gap-8 py-8 md:py-10">
             {/* Card Foto */}
             <ScrollAnimationWrapper>
-                <Card isFooterBlurred className="border-none w-[250px] md:w-[300px]" radius="lg">
+                <Card
+                    isFooterBlurred
+                    className="border-none w-[250px] md:w-[300px]"
+                    radius="lg"
+                >
                     <Image
                         alt="Foto profil"
                         className="object-cover w-full"
@@ -32,7 +38,7 @@ export const HeroSection = () => {
                                 <Download size={16} />
                             </span>
                             <span className="absolute translate-y-10 group-hover:translate-y-0 transition-transform duration-300 inline-flex items-center justify-center">
-                                <Download size={16} className="animate-bounce" />
+                                <Download className="animate-bounce" size={16} />
                             </span>
                         </Button>
                     </CardFooter>
@@ -42,11 +48,16 @@ export const HeroSection = () => {
             {/* Heading utama */}
             <ScrollAnimationWrapper>
                 <div className="inline-block max-w-xl text-center justify-center px-4">
-                    <span className="tracking-tight inline font-semibold text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-tight">Hi, I'm </span>
-                    <span className="tracking-tight inline font-semibold text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-tight bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]">Rafi Chandra.</span>
+                    <span className="tracking-tight inline font-semibold text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-tight">
+                        Hi, I'm
+                    </span>
+                    <span className="tracking-tight inline font-semibold text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-tight bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8]">
+                        Rafi Chandra.
+                    </span>
 
                     <div className="w-full my-2 text-base sm:text-lg lg:text-xl text-default-600 block max-w-full">
-                        I'm a software engineer with a passion for building accessible and customizable web applications.
+                        I'm a software engineer with a passion for building accessible and
+                        customizable web applications.
                     </div>
                 </div>
             </ScrollAnimationWrapper>
@@ -55,13 +66,21 @@ export const HeroSection = () => {
             <div className="w-full mt-6 md:mt-10 overflow-hidden py-2 relative">
                 <div className="inline-flex animate-marquee whitespace-nowrap">
                     <div className="flex items-center">
-                        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-4 font-semibold">Web Developer</span>
+                        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-4 font-semibold">
+                            Web Developer
+                        </span>
                         <span className="text-base mx-4 text-white/60">•</span>
-                        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-4 bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] font-bold">Software Engineer</span>
+                        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-4 bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] font-bold">
+                            Software Engineer
+                        </span>
                         <span className="text-base mx-4 text-white/60">•</span>
-                        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-4 font-semibold">Frontend Developer</span>
+                        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-4 font-semibold">
+                            Frontend Developer
+                        </span>
                         <span className="text-base mx-4 text-white/60">•</span>
-                        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-4 bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] font-bold">Backend Developer</span>
+                        <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mx-4 bg-clip-text text-transparent bg-gradient-to-b from-[#FF1CF7] to-[#b249f8] font-bold">
+                            Backend Developer
+                        </span>
                         <span className="text-base mx-4 text-white/60">•</span>
                     </div>
                 </div>
@@ -70,4 +89,4 @@ export const HeroSection = () => {
     );
 };
 
-export default HeroSection; 
+export default HeroSection;

@@ -8,6 +8,7 @@ import clsx from "clsx";
 
 // Local components and utils
 import { Providers } from "./providers";
+
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
