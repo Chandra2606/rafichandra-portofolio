@@ -1,7 +1,12 @@
+// Styles import
 import "@/styles/globals.css";
+
+// Third-party libraries
 import { Metadata, Viewport } from "next";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
+
+// Local components and utils
 import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
